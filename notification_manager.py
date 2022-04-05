@@ -17,7 +17,7 @@ class NotificationManager:
     def send_mail(self, emails):
         for i in range(len(emails)):
             mail = emails[i]
-            with smtplib.SMTP('mail.photoretoucher.eu') as connection:
+            with smtplib.SMTP('YOUR MAIL HERE') as connection:
                 connection.starttls()
                 connection.login(user=MY_EMAIL, password=MY_PASSWORD)
                 connection.sendmail(from_addr=MY_EMAIL,

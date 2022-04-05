@@ -3,8 +3,8 @@ import smtplib
 from data_manager import DataManager
 from flight_data import FlightData
 
-MY_EMAIL = 'test@photoretoucher.eu'
-MY_PASSWORD = 'mikolino2009'
+MY_EMAIL = 'YOUR MAIL HERE'
+MY_PASSWORD = 'YOUR PASS HERE'
 
 
 class NotificationManager:

@@ -1,9 +1,9 @@
 import requests
 
-api_sheety = 'https://api.sheety.co/7315d8a6207bbe1f14127ef6d29759c8/flightDeals'
+api_sheety = 'https://api.sheety.co/Your Sheety Details'
 
 sheety_headers = {
-    "Authorization": "Bearer dzffdhdbghmhmzdsggfnhn"
+    "Authorization": "Bearer Your Sheety Key"
 }
 
 

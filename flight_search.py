@@ -4,7 +4,7 @@ from flight_data import FlightData
 from notification_manager import NotificationManager
 
 KIWI_ENDPOINT = "https://tequila-api.kiwi.com"
-API_KIWI = '75yZDufIEWtYp6k5bPK9ogKG0uSRE0wr'
+API_KIWI = 'YOUR TOKEN HERE'
 
 
 class FlightSearch:
@@ -55,10 +55,7 @@ class FlightSearch:
                 data = response.json()["data"][0]
             except IndexError:
                 pass
-                # print(f"No flights found for {self.destinations[i]['city']}.\n")
-                # return None
 
-            # print(response.json()['data'][0])
             else:
                 price = data['price']
                 if price <= self.destinations[i].get('lowestPrice'):
@@ -73,7 +70,3 @@ class FlightSearch:
                     )
 
                     NotificationManager(flight_data)
-
-                    # print(f"{flight_data.destination_city}: £{flight_data.price}")
-                    # print(f"Departure {flight_data.out_date}, return {flight_data.return_date}\n")
-            # return flight_data
